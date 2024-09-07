@@ -6,15 +6,38 @@
     <title>Document</title>
 </head>
 <body>
-    <h2 id="demo">JavaScript Array</h2>
+    <h2 id="demo">JavaScript Array</h2><hr>
 
+            <p id="myjoin"></p>
+            <p id="myfirstpop"></p>
+            <p id="mysecondpop"></p><hr>
+
+            <p id="demo2"></p>
     <script>
         var car=[
             "coding",
             "magic",
             "learn"
         ];
+
+                  var fruits = ["banana", "orange", "apple", "mango"];
+
+                    document.getElementById("myjoin").innerHTML = fruits.join("*");
+                    document.getElementById("myfirstpop").innerHTML = fruits;
+                    fruits.pop();
+                    document.getElementById("mysecondpop").innerHTML = fruits;
         document.getElementById("demo").innerHTML = car[2];
+
+        function add(a,b,c){
+            return a+b+c;
+        }
+        function average(a,b,c){
+            return add(a,b,c)/3;
+        }
+        let result = average(10,20,30);
+        document.getElementById("demo2").innerHTML = result;
     </script>
+
+
 </body>
 </html>
